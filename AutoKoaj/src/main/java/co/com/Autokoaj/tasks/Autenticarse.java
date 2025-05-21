@@ -1,13 +1,13 @@
-package co.com.AutoFacebook.tasks;
+package co.com.Autokoaj.tasks;
 
-import co.com.AutoFacebook.models.CredencialesInicioSesion;
+import co.com.Autokoaj.models.CredencialesInicioSesion;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import java.util.List;
-import static co.com.AutoFacebook.userinterface.Autentificacion.*;
+import static co.com.Autokoaj.userinterface.Autentificacion.*;
 
 public class Autenticarse implements Task {
     private List<CredencialesInicioSesion> credenciales;

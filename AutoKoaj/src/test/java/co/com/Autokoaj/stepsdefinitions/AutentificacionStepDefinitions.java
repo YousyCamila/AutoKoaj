@@ -1,9 +1,8 @@
-package co.com.AutoFacebook.stepsdefinitions;
+package co.com.Autokoaj.stepsdefinitions;
 
-import co.com.AutoFacebook.models.CredencialesInicioSesion;
-import co.com.AutoFacebook.tasks.AbrirPagina;
-import co.com.AutoFacebook.tasks.Autenticarse;
-import cucumber.api.DataTable;
+import co.com.Autokoaj.models.CredencialesInicioSesion;
+import co.com.Autokoaj.tasks.AbrirPagina;
+import co.com.Autokoaj.tasks.Autenticarse;
 import cucumber.api.PendingException;
 import cucumber.api.java.ast.Cuando;
 import cucumber.api.java.es.Dado;
@@ -11,7 +10,6 @@ import cucumber.api.java.es.Entonces;
 
 import java.util.List;
 
-import static net.serenitybdd.screenplay.actors.OnStage.theActor;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class AutentificacionStepDefinitions {

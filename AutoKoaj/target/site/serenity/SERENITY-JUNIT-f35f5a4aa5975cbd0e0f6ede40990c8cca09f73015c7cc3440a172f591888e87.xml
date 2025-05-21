@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Autenticacion en la pagina de Facebook" skipped="1" tests="1" time="4.96" timestamp="2025-05-20 10:47:26"><testcase name="Verificar la autenticacion exitosa en la pagina de Facebook"><skipped/></testcase></testsuite>
-=======
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Autenticacion en la pagina de Facebook" skipped="1" tests="1" time="11.41" timestamp="2025-05-20 05:30:29"><testcase name="Verificar la autenticacion exitosa en la pagina de Facebook"><skipped/></testcase></testsuite>
->>>>>>> e42fffcef40b17bfb38fad1e65b9bb764e6ee29e
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Autenticacion en la pagina de Facebook" skipped="1" tests="1" time="0.08" timestamp="2025-05-21 12:41:58"><testcase name="Verificar la autenticacion exitosa en la pagina de Facebook"><skipped/></testcase></testsuite>

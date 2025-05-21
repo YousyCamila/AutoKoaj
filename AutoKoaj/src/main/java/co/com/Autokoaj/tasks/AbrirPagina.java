@@ -1,6 +1,6 @@
-package co.com.AutoFacebook.tasks;
+package co.com.Autokoaj.tasks;
 
-import co.com.AutoFacebook.userinterface.InicioFacebook;
+import co.com.Autokoaj.userinterface.InicioFacebook;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

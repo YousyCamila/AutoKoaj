@@ -1,4 +1,4 @@
-package co.com.AutoFacebook.models;
+package co.com.Autokoaj.models;
 
 public class CredencialesInicioSesion {
     private String usuarios;

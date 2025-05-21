@@ -34,9 +34,9 @@ public class Registrarse implements Task {
                 Enter.theValue(datosRegistro.getContrasena()).into(INPUT_CONFIRMAR_CONTRASENA),
                 SelectFromOptions.byVisibleText(datosRegistro.getTipoDocumento()).from(SELECT_TIPO_DOCUMENTO),
                 Enter.theValue(datosRegistro.getNumeroIdentificacion()).into(INPUT_NUMERO_IDENTIFICACION),
-                SelectFromOptions.byVisibleText(datosRegistro.getDiaNacimiento()).from(SELECT_DIA),
+                SelectFromOptions.byValue(datosRegistro.getDiaNacimiento()).from(SELECT_DIA),
                 SelectFromOptions.byVisibleText(datosRegistro.getMesNacimiento()).from(SELECT_MES),
-                SelectFromOptions.byVisibleText(datosRegistro.getAnioNacimiento()).from(SELECT_ANIO),
+                SelectFromOptions.byValue(datosRegistro.getAnioNacimiento()).from(SELECT_ANIO),
                 Click.on(BOTON_CONTINUAR)
         );
     }

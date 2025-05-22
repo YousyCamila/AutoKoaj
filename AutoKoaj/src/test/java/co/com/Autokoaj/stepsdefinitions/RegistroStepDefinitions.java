@@ -2,6 +2,7 @@ package co.com.Autokoaj.stepsdefinitions;
 
 import co.com.Autokoaj.models.DatosRegistro;
 import co.com.Autokoaj.models.DatosRegistroComplementario;
+import co.com.Autokoaj.questions.OpcionMiCuentaVisible;
 import co.com.Autokoaj.tasks.AbrirPaginaKoaj;
 import co.com.Autokoaj.tasks.CompletarRegistroComplementario;
 import co.com.Autokoaj.tasks.Registrarse;
@@ -14,6 +15,7 @@ import cucumber.api.java.es.Y;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class RegistroStepDefinitions {
@@ -54,7 +56,7 @@ public class RegistroStepDefinitions {
 
     @Y("^hace clic en el botón \"Continuar\"$")
     public void haceClicEnElBotónContinuar() {
-        // Este paso se puede omitir si ya está incluido en la Task Registrarse
+
     }
 
     @Y("^completa el segundo formulario con los datos:$")
@@ -91,6 +93,8 @@ public class RegistroStepDefinitions {
 
     @Entonces("^el usuario debe ser registrado exitosamente$")
     public void elUsuarioDebeSerRegistradoExitosamente() {
-        System.out.println("✅ Registro exitoso validado.");
+        theActorInTheSpotlight().should(seeThat(OpcionMiCuentaVisible.estaPresente()));
     }
 }
+
+

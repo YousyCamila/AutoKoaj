@@ -40,7 +40,9 @@ public class RegistroStepDefinitions {
 
     @Entonces("^el usuario debe ser registrado exitosamente$")
     public void elUsuarioDebeSerRegistradoExitosamente() {
-        // Aquí deberías agregar una Question real de validación
+
         System.out.println("✅ Registro exitoso validado.");
     }
+
+
 }

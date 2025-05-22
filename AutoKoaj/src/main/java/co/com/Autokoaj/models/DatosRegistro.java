@@ -2,16 +2,16 @@ package co.com.Autokoaj.models;
 
 public class DatosRegistro {
 
-    private String titulo;              // "Sr." o "Sra."
+    private String titulo;
     private String nombre;
     private String apellido;
     private String email;
     private String contrasena;
-    private String tipoDocumento;       // Ej: "Cédula de ciudadanía"
+    private String tipoDocumento;
     private String numeroIdentificacion;
-    private String diaNacimiento;       // Ej: "21"
-    private String mesNacimiento;       // Ej: "Mayo" o "05" (depende de cómo esté en el select)
-    private String anioNacimiento;      // Ej: "1995"
+    private String diaNacimiento;
+    private String mesNacimiento;
+    private String anioNacimiento;
 
     public DatosRegistro(String titulo, String nombre, String apellido, String email,
                          String contrasena, String tipoDocumento, String numeroIdentificacion,

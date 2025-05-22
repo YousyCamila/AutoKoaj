@@ -35,7 +35,7 @@ public class Registrarse implements Task {
                 SelectFromOptions.byVisibleText(datosRegistro.getTipoDocumento()).from(SELECT_TIPO_DOCUMENTO),
                 Enter.theValue(datosRegistro.getNumeroIdentificacion()).into(INPUT_NUMERO_IDENTIFICACION),
                 SelectFromOptions.byValue(datosRegistro.getDiaNacimiento()).from(SELECT_DIA),
-                SelectFromOptions.byVisibleText(datosRegistro.getMesNacimiento()).from(SELECT_MES),
+                SelectFromOptions.byValue(datosRegistro.getMesNacimiento()).from(SELECT_MES),
                 SelectFromOptions.byValue(datosRegistro.getAnioNacimiento()).from(SELECT_ANIO),
                 Click.on(BOTON_CONTINUAR)
         );

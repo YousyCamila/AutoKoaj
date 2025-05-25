@@ -3,17 +3,11 @@ import co.com.Autokoaj.questions.OpcionMiCuentaVisible;
 import co.com.Autokoaj.tasks.AbrirPaginaKoaj;
 import co.com.Autokoaj.tasks.Autenticarse;
 import cucumber.api.DataTable;
-import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
-import cucumber.api.java.es.Y;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
-
 import java.util.List;
 import java.util.Map;
-
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 

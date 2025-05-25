@@ -1,21 +1,17 @@
 package co.com.Autokoaj.stepsdefinitions;
 
+import co.com.Autokoaj.questions.FiltroVisible;
 import co.com.Autokoaj.tasks.AbrirPaginaKoaj;
 import co.com.Autokoaj.tasks.FiltrarProducto;
-import co.com.Autokoaj.userinterface.FiltroKoaj;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import org.openqa.selenium.Keys;
-
 import java.util.Map;
-
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class FiltroStepDefinitions {
@@ -48,7 +44,6 @@ public class FiltroStepDefinitions {
 
     @Entonces("^el sistema debe confirmar que el artículo fue añadido correctamente al carrito$")
     public void elSistemaDebeConfirmarQueElArtículoFueAñadidoCorrectamenteAlCarrito() {
-
-        System.out.println("Validación pendiente");
+        theActorInTheSpotlight().should(seeThat(FiltroVisible.estaPresente()));
     }
 }

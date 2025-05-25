@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Filtrado de productos en Koaj" skipped="0" tests="1" time="15.42" timestamp="2025-05-25 05:46:11"><testcase name="Buscar y filtrar un buzo oversize, y agregarlo al carrito usando tabla de datos"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Filtrado de productos en Koaj" skipped="0" tests="1" time="23.77" timestamp="2025-05-25 06:12:53"><testcase name="Buscar y filtrar un buzo oversize, y agregarlo al carrito usando tabla de datos"/></testsuite>

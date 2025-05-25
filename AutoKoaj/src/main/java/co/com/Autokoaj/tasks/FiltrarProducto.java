@@ -49,6 +49,7 @@ public class FiltrarProducto implements Task {
                 Click.on(FiltroKoaj.opcionTalla(talla)),
                 Click.on(FiltroKoaj.opcionColor(color)),
                 Click.on(FiltroKoaj.opcionCategoria(categoria)),
+                Click.on(FiltroKoaj.BTN_PRODUCTO),
                 Click.on(FiltroKoaj.BOTON_AGREGAR_AL_CARRITO)
         );
     }

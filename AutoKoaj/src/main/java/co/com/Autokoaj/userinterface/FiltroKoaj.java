@@ -28,8 +28,10 @@ public class FiltroKoaj {
                 .located(By.xpath("//button[@dfd-value-key='categories' and span[1][normalize-space(text())='" + categoria + "']]"));
     }
 
+    public static Target BTN_PRODUCTO = Target.the("Oprimir el producto")
+            .located(By.id("df-result-product-bc430a79e4d36f58d10fb77497ed85c4"));
 
     public static Target BOTON_AGREGAR_AL_CARRITO = Target.the("Agregar al carrito")
-            .located(By.xpath("//*[@id=\"df-result-product-bc430a79e4d36f58d10fb77497ed85c4-options\"]/div[3]/button"));
+            .located(By.xpath("//*[@id=\"add_to_cart\"]/button"));
 
 }

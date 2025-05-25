@@ -20,10 +20,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class RegistroStepDefinitions {
 
-    @Before
-    public void configurarEscenario() {
-        OnStage.setTheStage(new OnlineCast());
-    }
+
 
     @Dado("^que el usuario accede a la página de registro de Koaj$")
     public void queElUsuarioAccedeALaPáginaDeRegistroDeKoaj() {

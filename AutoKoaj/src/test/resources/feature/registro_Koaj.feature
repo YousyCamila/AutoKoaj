@@ -11,19 +11,19 @@ Característica: Registro de usuario en el portal de Koaj
   Escenario: Registro exitoso de un nuevo usuario
     Dado que el usuario accede a la página de registro de Koaj
     Cuando el usuario completa el primer formulario con los datos:
-      | título                | Sr.                      |
-      | nombre                | Emilio                   |
-      | apellido              | Guerra                   |
-      | correo                | emili.guerra@example.com |
-      | contraseña            | Password123              |
-      | tipo documento        | Cédula de ciudadanía     |
-      | número identificación | 1234567854               |
-      | día                   | 12                       |
-      | mes                   | 1                        |
-      | año                   | 1996                     |
+      | título                | Sr.                       |
+      | nombre                | Oriana                    |
+      | apellido              | Guerra                    |
+      | correo                | Oriana.guerra@example.com |
+      | contraseña            | Password123               |
+      | tipo documento        | Cédula de ciudadanía      |
+      | número identificación | 1011207856                |
+      | día                   | 12                        |
+      | mes                   | 5                         |
+      | año                   | 1996                      |
     Y hace clic en el botón "Continuar"
     Y completa el segundo formulario con los datos:
-      | teléfono celular | 3001234895      |
+      | teléfono celular | 3001234845      |
       | país             | Colombia        |
       | departamento     | Bogota          |
       | ciudad           | 155             |

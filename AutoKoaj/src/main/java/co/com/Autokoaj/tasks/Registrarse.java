@@ -26,6 +26,7 @@ public class Registrarse implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
+                Click.on(BTON_REGISTRARSE),
                 Click.on(datosRegistro.getTitulo().equalsIgnoreCase("Sr.") ? RADIO_TITULO_SR : RADIO_TITULO_SRA),
                 Enter.theValue(datosRegistro.getNombre()).into(INPUT_NOMBRE),
                 Enter.theValue(datosRegistro.getApellido()).into(INPUT_APELLIDO),

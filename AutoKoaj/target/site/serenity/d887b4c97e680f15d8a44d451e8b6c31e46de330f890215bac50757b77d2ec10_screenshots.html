@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-05-2025 17:56</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-05-2025 12:30</span>
     <br style="clear:left"/>
 </div>
 
@@ -194,9 +194,9 @@ Para crear una cuenta en la tienda en línea Koaj y acceder a mis beneficios.
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registro exitoso de un nuevo usuario
+                                <span class="error-color">Registro exitoso de un nuevo usuario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -213,78 +213,97 @@ Para crear una cuenta en la tienda en línea Koaj y acceder a mis beneficios.
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Web driver exception: The following error occurred: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:42617</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.WebDriverException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.Autokoaj.tasks.CompletarRegistroComplementario.performAs(CompletarRegistroComplementario.java:24)<br />co.com.Autokoaj.stepsdefinitions.RegistroStepDefinitions.completaElSegundoFormularioConLosDatos(RegistroStepDefinitions.java:74)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: java.net.ConnectException
+                    </h4>
+                    <div>
+                            <pre>Failed to connect to localhost/0:0:0:0:0:0:0:1:42617</pre>
+                        <pre>okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java :247)<br />okhttp3.internal.connection.RealConnection.connect(RealConnection.java :165)<br />okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java :257)<br />okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java :135)<br />okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java :114)<br />okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java :42)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121)<br />okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java :93)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121)<br />okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java :93)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147)<br />okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java :126)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121)<br />okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java :200)<br />okhttp3.RealCall.execute(RealCall.java :77)<br />co.com.Autokoaj.tasks.CompletarRegistroComplementario.performAs(CompletarRegistroComplementario.java :24)<br />co.com.Autokoaj.stepsdefinitions.RegistroStepDefinitions.completaElSegundoFormularioConLosDatos(RegistroStepDefinitions.java :74)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b1b6e46f7257895cec2a3058f30c1bc58e61c0b3ac449bf03475c208f2e8d8bb.png" title=" Dado que el usuario accede a la p&aacute;gina de registro de Koaj" width="1925"/>
-                <img src="b1b6e46f7257895cec2a3058f30c1bc58e61c0b3ac449bf03475c208f2e8d8bb.png" title=" Usuario abrir pagina koaj" width="1925"/>
-                <img src="b1b6e46f7257895cec2a3058f30c1bc58e61c0b3ac449bf03475c208f2e8d8bb.png" title=" usuario opens the Inicio koaj" width="1925"/>
-                <img src="b1b6e46f7257895cec2a3058f30c1bc58e61c0b3ac449bf03475c208f2e8d8bb.png" title=" Usuario abrir pagina koaj (completed)" width="1925"/>
-                <img src="b1b6e46f7257895cec2a3058f30c1bc58e61c0b3ac449bf03475c208f2e8d8bb.png" title=" Dado que el usuario accede a la p&aacute;gina de registro de Koaj (completed)" width="1925"/>
-                <img src="2e58984974684b21821bd50eebdfb76994186ef71680f9604befb9a645df7b85.png" title=" Cuando el usuario completa el primer formulario con los datos:
+                <img src="0aee436070bbb1af8ae1549290ce0e05d98336cce20bbe7899fa54d05aca65f7.png" title=" Dado que el usuario accede a la p&aacute;gina de registro de Koaj" width="1925"/>
+                <img src="0aee436070bbb1af8ae1549290ce0e05d98336cce20bbe7899fa54d05aca65f7.png" title=" Usuario abrir pagina koaj" width="1925"/>
+                <img src="0aee436070bbb1af8ae1549290ce0e05d98336cce20bbe7899fa54d05aca65f7.png" title=" usuario opens the Inicio koaj" width="1925"/>
+                <img src="0aee436070bbb1af8ae1549290ce0e05d98336cce20bbe7899fa54d05aca65f7.png" title=" Usuario abrir pagina koaj (completed)" width="1925"/>
+                <img src="0aee436070bbb1af8ae1549290ce0e05d98336cce20bbe7899fa54d05aca65f7.png" title=" Dado que el usuario accede a la p&aacute;gina de registro de Koaj (completed)" width="1925"/>
+                <img src="4c04074d3b6ed45c7adfec666a3bfac01018425e43b24275cccbd39725f2bee0.png" title=" Cuando el usuario completa el primer formulario con los datos:
 | t&iacute;tulo | Sr. |
-| nombre | Emilio |
+| nombre | Oriana |
 | apellido | Guerra |
-| correo | emili.guerra@example.com |
+| correo | Oriana.guerra@example.com |
 | contrase&ntilde;a | Password123 |
 | tipo documento | C&eacute;dula de ciudadan&iacute;a |
-| n&uacute;mero identificaci&oacute;n | 1234567854 |
+| n&uacute;mero identificaci&oacute;n | 1011207856 |
 | d&iacute;a | 12 |
-| mes | 1 |
+| mes | 5 |
 | a&ntilde;o | 1996 |" width="1925"/>
-                <img src="2e58984974684b21821bd50eebdfb76994186ef71680f9604befb9a645df7b85.png" title=" Usuario registrarse" width="1925"/>
-                <img src="2e58984974684b21821bd50eebdfb76994186ef71680f9604befb9a645df7b85.png" title=" usuario clicks on Seleccionar t&iacute;tulo Se&ntilde;or" width="1925"/>
-                <img src="d2fa2033f0ea7bdeb2ba0be4ed84249d48490aed1eb39dca1e108c2891af69fe.png" title=" usuario enters 'Emilio' into Campo para ingresar el nombre" width="1925"/>
-                <img src="1e52847ec8fcec685a16fe51603e11498cefdf4828efd4431da7058eaddce2f3.png" title=" usuario enters 'Guerra' into Campo para ingresar el apellido" width="1925"/>
-                <img src="633dd611a66c7c2f94b1b8750d39ddb889ba092441bf71331ca6fa15cfd46a98.png" title=" usuario enters 'emili.guerra@example.com' into Campo para ingresar el correo electr&oacute;nico" width="1925"/>
-                <img src="de47b43ca717780f2183f59de0aee0e3c242e8fa103b10c25a01d0e41c32c65e.png" title=" usuario enters 'Password123' into Campo para ingresar la contrase&ntilde;a" width="1925"/>
-                <img src="654d098ffe191c99c824893c026877cb9ea14ccd1f81cf9c469e978de67bba0e.png" title=" usuario enters 'Password123' into Campo para confirmar la contrase&ntilde;a" width="1925"/>
-                <img src="7b8747812aa4231fc64178d6dc42367b8712f2aefe4fef9b663b84730cc73f27.png" title=" usuario select C&eacute;dula de ciudadan&iacute;a on Seleccionar tipo de documento" width="1925"/>
-                <img src="ef7041a800dbed6249b8a306a9acacbf8faee856e16719ac9484d0426c251d86.png" title=" usuario enters '1234567854' into Campo para n&uacute;mero de identificaci&oacute;n" width="1925"/>
-                <img src="acde62deb6f94ad8670a58740237d6688a03166575cda042ef6c5ad941114170.png" title=" usuario selects 12 in Selector para el d&iacute;a de nacimiento" width="1925"/>
-                <img src="676a8116b4f3fa7f3271f2697e78a5c63c9c516fc236899e52c941d11e7fcf8d.png" title=" usuario selects 1 in Selector para el mes de nacimiento" width="1925"/>
-                <img src="b23ff3c811f4e85ca03c3fcb92e147a75cfcb642bbbc362d7856992923d8ac7e.png" title=" usuario selects 1996 in Selector para el a&ntilde;o de nacimiento" width="1925"/>
-                <img src="5693a78d3995f960aa112c396012321a23fbb3901f9e22754697aafc20f04421.png" title=" usuario clicks on Bot&oacute;n para continuar con el registro" width="1925"/>
-                <img src="5693a78d3995f960aa112c396012321a23fbb3901f9e22754697aafc20f04421.png" title=" Usuario registrarse (completed)" width="1925"/>
-                <img src="5693a78d3995f960aa112c396012321a23fbb3901f9e22754697aafc20f04421.png" title=" Cuando el usuario completa el primer formulario con los datos:
+                <img src="4c04074d3b6ed45c7adfec666a3bfac01018425e43b24275cccbd39725f2bee0.png" title=" Usuario registrarse" width="1925"/>
+                <img src="4c04074d3b6ed45c7adfec666a3bfac01018425e43b24275cccbd39725f2bee0.png" title=" usuario clicks on Oprimir el boton para registrarse" width="1925"/>
+                <img src="071e8938bec4e60e62792ac52491b403b1c6f328977ae62e9d38878725db7b15.png" title=" usuario clicks on Seleccionar t&iacute;tulo Se&ntilde;or" width="1925"/>
+                <img src="4103f47b9fc6ba809d9f77555e619302250a99115e8da980f40c8050d96e2e49.png" title=" usuario enters 'Oriana' into Campo para ingresar el nombre" width="1925"/>
+                <img src="4af1e9213915ca8d376eb7321df5e3bd400162fb1ceea39ba2773be393200fec.png" title=" usuario enters 'Guerra' into Campo para ingresar el apellido" width="1925"/>
+                <img src="968d84688c164df483533c68086c58d117eb7c3774229eae53a102b753954501.png" title=" usuario enters 'Oriana.guerra@example.com' into Campo para ingresar el correo electr&oacute;nico" width="1925"/>
+                <img src="13f747a9ceee48b2a93b44cfde9bf93af484548bf0858909e1ad45b4030cadcc.png" title=" usuario enters 'Password123' into Campo para ingresar la contrase&ntilde;a" width="1925"/>
+                <img src="00aa6e9c931a1baae951726344efe10d1f7d6b2936a7e7501d9eb5e68c0c8e94.png" title=" usuario enters 'Password123' into Campo para confirmar la contrase&ntilde;a" width="1925"/>
+                <img src="d12e405fb5219a0792274eb3c299682db2b0598912a1c99bb78ad090b1c2c169.png" title=" usuario select C&eacute;dula de ciudadan&iacute;a on Seleccionar tipo de documento" width="1925"/>
+                <img src="8734106b06f1107c35c27bea6b152d2545efba51b422d6027b6377070f342393.png" title=" usuario enters '1011207856' into Campo para n&uacute;mero de identificaci&oacute;n" width="1925"/>
+                <img src="95629167be72a66d6d72d07f9792d52d8dee6afa18fd5b7147d419ebe56759ce.png" title=" usuario selects 12 in Selector para el d&iacute;a de nacimiento" width="1925"/>
+                <img src="41ef5ed6d652d700c97f01f6a7c1f5525f781bdc42403908fa446d599be8c5e1.png" title=" usuario selects 5 in Selector para el mes de nacimiento" width="1925"/>
+                <img src="0adb6c37088c32d9500e02519aafe0cb1fc1cd86cf6a284c65a8c960a93ab5e5.png" title=" usuario selects 1996 in Selector para el a&ntilde;o de nacimiento" width="1925"/>
+                <img src="da1e7e99db294d1c619e3853d18b7de52665f88c5fab45797c799dea409ef461.png" title=" usuario clicks on Bot&oacute;n para continuar con el registro" width="1925"/>
+                <img src="da1e7e99db294d1c619e3853d18b7de52665f88c5fab45797c799dea409ef461.png" title=" Usuario registrarse (completed)" width="1925"/>
+                <img src="da1e7e99db294d1c619e3853d18b7de52665f88c5fab45797c799dea409ef461.png" title=" Cuando el usuario completa el primer formulario con los datos:
 | t&iacute;tulo | Sr. |
-| nombre | Emilio |
+| nombre | Oriana |
 | apellido | Guerra |
-| correo | emili.guerra@example.com |
+| correo | Oriana.guerra@example.com |
 | contrase&ntilde;a | Password123 |
 | tipo documento | C&eacute;dula de ciudadan&iacute;a |
-| n&uacute;mero identificaci&oacute;n | 1234567854 |
+| n&uacute;mero identificaci&oacute;n | 1011207856 |
 | d&iacute;a | 12 |
-| mes | 1 |
+| mes | 5 |
 | a&ntilde;o | 1996 | (completed)" width="1925"/>
-                <img src="5693a78d3995f960aa112c396012321a23fbb3901f9e22754697aafc20f04421.png" title=" Y hace clic en el bot&oacute;n &quot;Continuar&quot;" width="1925"/>
-                <img src="618ec856e67daf09c4a68d8de4b678630bc66a5d3cbe4ae5031f910de0d81d92.png" title=" Y completa el segundo formulario con los datos:
-| tel&eacute;fono celular | 3001234895 |
-| pa&iacute;s | Colombia |
-| departamento | Bogota |
-| ciudad | 155 |
-| direcci&oacute;n | Calle Falsa 124 |" width="1925"/>
-                <img src="618ec856e67daf09c4a68d8de4b678630bc66a5d3cbe4ae5031f910de0d81d92.png" title=" Usuario completar registro complementario" width="1925"/>
-                <img src="618ec856e67daf09c4a68d8de4b678630bc66a5d3cbe4ae5031f910de0d81d92.png" title=" usuario enters '3001234895' into Campo tel&eacute;fono celular" width="1925"/>
-                <img src="0476e81df39e87196fda72d78ff1a9df808160adfdb636528c4cd13506934963.png" title=" usuario select Colombia on Selector pa&iacute;s" width="1925"/>
-                <img src="2878d21990ee8abc93d4466367228655a744286e714f7eb025afa849854b754e.png" title=" usuario select Bogota on Selector departamento" width="1925"/>
-                <img src="dae9e63ed57da841af14642dd2ca2a5a8b494267042a46ffa40fa9589139a68f.png" title=" usuario selects 155 in Selector ciudad" width="1925"/>
-                <img src="8a50f968017ca65925ee78f210d7b40e2210576c37cee40e241ebe155313c6ba.png" title=" usuario enters 'Calle Falsa 124' into Campo direcci&oacute;n" width="1925"/>
-                <img src="18a33388f2943d5c7610fd29b0adff9e50f118982809f12d42e18e1958bfdc29.png" title=" usuario clicks on Checkbox t&eacute;rminos y condiciones" width="1925"/>
-                <img src="1cc9145ad26618c8db29f5ba4aa71fc637577f4ec430fd5e3e670af019110d4e.png" title=" usuario clicks on Checkbox tratamiento de datos" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" usuario clicks on Bot&oacute;n registrar" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" Usuario completar registro complementario (completed)" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" Y completa el segundo formulario con los datos:
-| tel&eacute;fono celular | 3001234895 |
-| pa&iacute;s | Colombia |
-| departamento | Bogota |
-| ciudad | 155 |
-| direcci&oacute;n | Calle Falsa 124 | (completed)" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" Y acepta los t&eacute;rminos y condiciones" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" Y acepta el tratamiento de datos personales seg&uacute;n la Pol&iacute;tica de Protecci&oacute;n de Datos" width="1925"/>
-                <img src="98f36970952e94e392042106c3cb3a7ac2af6b7a43426695762d282fffe7a90f.png" title=" Y hace clic en el bot&oacute;n &quot;Registro&quot;" width="1925"/>
-                <img src="c2667f6f4904705413e4ff313b4d2c11aaec43a733352c82b54539ffeed8914d.png" title=" Entonces el usuario debe ser registrado exitosamente" width="1925"/>
-                <img src="c2667f6f4904705413e4ff313b4d2c11aaec43a733352c82b54539ffeed8914d.png" title=" Then opcion mi cuenta visible" width="1925"/>
-                <img src="c2667f6f4904705413e4ff313b4d2c11aaec43a733352c82b54539ffeed8914d.png" title=" Entonces el usuario debe ser registrado exitosamente (completed): <span class='success-color'>SUCCESS</span>" width="1925"/>
+                <img src="da1e7e99db294d1c619e3853d18b7de52665f88c5fab45797c799dea409ef461.png" title=" Y hace clic en el bot&oacute;n &quot;Continuar&quot;: <span class='error-color'>ERROR</span>" width="1925"/>
             </div>
         </div>
 

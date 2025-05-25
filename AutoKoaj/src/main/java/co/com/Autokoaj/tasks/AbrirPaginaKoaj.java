@@ -14,7 +14,6 @@ public class AbrirPaginaKoaj implements Task{
         return Tasks.instrumented(AbrirPaginaKoaj.class);
     }
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

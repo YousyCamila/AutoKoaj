@@ -6,6 +6,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class Registro extends PageObject {
 
+    public static Target BTON_REGISTRARSE = Target.the("Oprimir el boton para registrarse")
+            .located(By.xpath("//*[@id=\"auth_right_column\"]/div/div/a"));
+
     public static Target RADIO_TITULO_SR = Target.the("Seleccionar título Señor")
             .located(By.id("id_gender1"));
 

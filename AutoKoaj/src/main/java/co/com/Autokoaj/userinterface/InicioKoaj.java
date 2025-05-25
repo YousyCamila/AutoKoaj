@@ -2,7 +2,7 @@ package co.com.Autokoaj.userinterface;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
-@DefaultUrl(value = "https://www.koaj.co/inicio-sesion?register")
+@DefaultUrl(value = "https://www.koaj.co/inicio-sesion?back=my-account")
 
 public class InicioKoaj extends PageObject {
 }
